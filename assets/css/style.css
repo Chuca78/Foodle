@@ -6,27 +6,34 @@ body * {
   display: none;
 }
 
-header{
+header {
   text-align: center;
-  background-color: #D65A31;
-  color:white;
-  padding: 50px;
-  
-}
-
-#dribbleShot{
-  background-color: #B2B2B2;
-}
-
-footer{
+  /* changed header color to match footer */
   background-color: #222831;
-  color:white;
-  text-align: center;
+  color: #FFF7E9;
+  padding: 50px;
 }
 
-form{
-  width:60vw;
+#dribbleShot {
+  background-color: #FFF7E9;
+  /* added a background image - this can be changed as we want */
+  background:url(../images/adobe071.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:70vh
 }
+
+footer {
+  background-color: #222831;
+  color: #FFF7E9;
+  text-align: center;
+  min-height:10vh
+}
+
+form {
+  width: 60vw;
+}
+
 .main {
   flex: 3;
 }
@@ -34,18 +41,37 @@ form{
 .sidebar {
   flex: 1;
 }
+
 .custom-rounded {
   border-radius: 25px;
 }
 
 .custom-tr-rounded {
-  border-radius:  0 25px 0 0;
+  border-radius: 0 25px 0 0;
 }
 
-.timer {
+/* removed this styling - it was part of the template that we don't use */
+/* .timer {
   background: rgba(217, 194, 105, .2);
+} */
+
+/* .text-xxs {
+  font-size: .7rem;
+} */
+
+/* added background color to match the ingredients price section */
+#side-section {
+  background-color: #af874b;
 }
 
-.text-xxs {
-  font-size: .7rem;
+.headingText {
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+/* added some styling for the ingredients needed text */
+#selectedDishName{
+  background-color: #FFF7E9;
 }
